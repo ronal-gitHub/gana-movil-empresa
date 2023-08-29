@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Upstream Test Suite">
+
+	<parameter name="browser" value="chrome" />
+	<parameter name="hostUrl" value="https://www.bg.com.bo" />
+
+	<parameter name="menus" value="Negocios|Menu hamburguesa|GanaMóvil Empresas" />
+	<parameter name="username" value="upstream" />
+	<parameter name="password" value="Asd123!." />
+	<parameter name="browser" value="chrome" />
+	<parameter name="timeout" value="10" />
+
+
+	<test
+		name="Valida  que se muestre cada uno de los datos de contacto por medio de una assertion">
+		<classes>
+			<class name="tests.GanaMovilEmpresaPageTest" />
+		</classes>
+	</test>
+
+</suite>

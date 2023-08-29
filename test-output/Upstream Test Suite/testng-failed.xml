@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Upstream Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="Asd123!."/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="hostUrl" value="https://www.bg.com.bo"/>
+  <parameter name="menus" value="Negocios|Menu hamburguesa|GanaMóvil Empresas"/>
+  <parameter name="timeout" value="10"/>
+  <parameter name="username" value="upstream"/>
+  <test thread-count="5" name="Valida  que se muestre cada uno de los datos de contacto por medio de una assertion(failed)">
+    <classes>
+      <class name="tests.GanaMovilEmpresaPageTest">
+        <methods>
+          <include name="testStep_2"/>
+          <include name="setUp"/>
+          <include name="testStep_1"/>
+          <include name="testStep_4"/>
+          <include name="tearDown"/>
+          <include name="testStep_3"/>
+        </methods>
+      </class> <!-- tests.GanaMovilEmpresaPageTest -->
+    </classes>
+  </test> <!-- Valida  que se muestre cada uno de los datos de contacto por medio de una assertion(failed) -->
+</suite> <!-- Failed suite [Upstream Test Suite] -->
